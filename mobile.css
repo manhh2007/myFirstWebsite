@@ -1,0 +1,91 @@
+@media (max-width: 740px) {
+  * {
+    font-size: 15px;
+  }
+  .col-half {
+    width: 100%;
+  }
+  .nav ul {
+    display: block;
+  }
+  .nav ul li {
+    width: 100%;
+  }
+  header .nav ul li a {
+    display: block;
+  }
+  .nav li:first-child {
+    display: inline-block;
+    width: fit-content;
+  }
+  .nav--search {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  header .nav ul > li {
+    display: block;
+  }
+  header .nav {
+    overflow: hidden;
+  }
+  .container {
+    overflow: hidden;
+  }
+  .nav--search .fa-magnifying-glass {
+    display: none;
+  }
+  .nav--search .fa-bars {
+    display: block !important;
+    line-height: 50px;
+    font-size: 20px;
+  }
+  .nav--search:hover {
+    color: black;
+    background-color: #ccc;
+  }
+  .content .member-list {
+    margin-top: 48px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: none;
+    text-align: center;
+  }
+  .tourdate--container {
+    width: 100%;
+  }
+  .container2,
+  .contact--container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .tour--place {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: none;
+    gap: 16px;
+    padding: 32px 0;
+  }
+  .contact--left {
+    width: 100%;
+    float: none;
+  }
+  .mail-input {
+    padding: 0;
+  }
+  .contact--left {
+    margin-bottom: 12px;
+  }
+  .contact--left ul li {
+    font-size: 18px;
+  }
+  .contact--container {
+    display: flow-root;
+  }
+  .footer-container {
+    margin: 0;
+  }
+  .icon-wrapper {
+    margin-top: 0;
+  }
+}
