@@ -2,7 +2,8 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Arial, sans-serif;
 }
-html,body {
+html,
+body {
   scroll-behavior: smooth !important;
 }
 .col-half {
@@ -69,8 +70,8 @@ header .nav li:hover .subnav {
   display: block;
 }
 
-header .nav li:hover > a,
-.subnav li:hover > a {
+header .nav li:hover,
+.subnav li:hover {
   background-color: #ccc;
   color: #000;
 }
@@ -82,7 +83,11 @@ header .subnav li,
 .subnav li a {
   display: block !important;
 }
-.nav--search {
+.mobile-menu {
+  display: none;
+}
+.nav--search,
+.mobile-menu {
   float: right;
   line-height: 50px;
   padding: 0 24px;
@@ -172,8 +177,8 @@ header .subnav li,
   color: #757575;
   font-style: normal;
 }
-.tour--place-item img:hover{
-  opacity:.6;
+.tour--place-item img:hover {
+  opacity: 0.6;
 }
 .sold--out {
   background-color: #000;

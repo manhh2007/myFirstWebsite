@@ -23,7 +23,7 @@
                 <li><a href="#contact">contact</a></li>
                 <li>
                     <a href="#">more
-                   <i class="fa-solid fa-angle-down "></i>
+                    <i class="fa-solid fa-angle-down "></i>
 
                     </a>
                     <ul class="subnav">
@@ -35,10 +35,10 @@
                 </li>
 
             </ul>
-            <div class="nav--search" id="menu">
+            <div class="nav--search" >
                 <i class="fa-solid fa-magnifying-glass" ></i>
-                <i class="fa-solid fa-bars"style="display:none"></i>
             </div>
+                <div class="mobile-menu" id="menu"><i class="fa-solid fa-bars"></i></div>
         </div>
     </header>
 
@@ -205,13 +205,18 @@
     // auto close
 
      var menuItems=document.querySelectorAll('.nav li a[href*="#"]')
-     console.log(menuItems)
      for (var i=0;i < menuItems.length;i++){
         var menuItem=menuItems[i]
         menuItem.onclick =function(){
-            height[0].style.height="50px";
+            var parent =this.nextElementSibling && this.nextElementSibling.classList.contains("subnav");
+            if (!parent){
 
+                height[0].style.height="50px";
+            }
+            else{
+                height[0].style.height="auto";
 
+            }
         }
      }
 
