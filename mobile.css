@@ -14,12 +14,14 @@
   header .nav ul li a {
     display: block;
   }
-  .nav > li:first-child {
-    display: inline-block;
+  header .nav ul li:first-child {
     width: fit-content;
   }
-  .nav > li:first-child:hover {
-    background-color: #000 !important;
+  header .nav ul li a {
+    display: inline-block;
+  }
+  .nav ul > li:first-child:hover {
+    background-color: #000;
   }
 
   .mobile-menu {
